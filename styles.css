@@ -1,0 +1,2013 @@
+:root {
+    --color-primario: #00e6db;
+    --color-secundario: #e74c3c;
+}
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin-top: 130px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 35px;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+
+#notas input[type="number"] {
+    width: 158px;
+}
+
+#Minima input[type="number"] {
+    width: 334px;
+
+}
+
+#notas {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+#notas div {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+#notaFinal {
+    font-size: 20px;
+
+}
+
+#notaRelativa {
+    font-size: 20px;
+}
+
+#notaFaltante {
+    font-size: 20px;
+}
+
+#Porcentajes {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#texto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#Titulo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.select {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px;
+    font-size: 16px;
+}
+
+#Selects {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    margin: 10px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: small;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    width: 16.67%;
+    /* Ajustado para 6 columnas */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: solid 2px #000000;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: var(--color-primario);
+}
+
+
+.file-select {
+    position: relative;
+    display: inline-block;
+    width: 235px;
+    height: 32px;
+    content: "Seleccionar matriz";
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.file-select:hover {
+    background-color: #a3a3a3;
+}
+
+.file-select::before {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    border-radius: 4px;
+    content: attr(data-file-name);
+    /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    height: 32px;
+    width: 235px;
+    display: inline-block;
+}
+
+
+button .botonReiniciar:hover {
+    background-color: #FF0000;
+}
+
+
+
+#botones-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+#botones {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+
+#Table th:first-child,
+#Table td:first-child {
+    white-space: nowrap;
+}
+
+#Table th,
+#Table td {
+    width: 20px;
+}
+
+.table-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    flex-direction: row;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+
+
+#Table th,
+#Table td {
+    text-align: center;
+}
+
+.titulos,
+.titulos th {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--color-primario);
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.Turnos,
+.Almuerzos,
+.Calculos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Informaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-right: 110px;
+    margin-left: 42px;
+}
+
+.Almuerzos {
+    width: 23%;
+}
+
+.Turnos table th,
+.Informaciones table th,
+.Almuerzos table th,
+.Calculos table th,
+#TablaSol table th,
+#TablaSol2 table th {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--color-primario);
+    color: #000000;
+    border-color: #f2f2f2;
+    text-align: center;
+}
+
+.Turnos table th:first-child,
+.Informaciones table th:first-child,
+.Almuerzos table td:first-child,
+.Almuerzos table th:first-child,
+.Calculos table td:first-child,
+.Calculos table th:first-child,
+.Turnos table td:first-child,
+.Informaciones table td:first-child {
+    width: 1%;
+    overflow-x: auto;
+    text-align: center;
+}
+
+
+#miSelector {
+    font-family: 'Nunito', Arial, sans-serif;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px;
+    font-size: 16px;
+    width: 150px;
+}
+
+#BotonesHorario {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', Arial, sans-serif;
+
+}
+
+.gradient {
+    background: linear-gradient(to right, red, orange);
+    color: white;
+}
+
+#btnGuardar,
+#btnImportar,
+#btnLimpiar,
+#btnEnviar,
+#btnEnviar2 {
+    padding: auto;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: solid 2px #000000;
+    font-family: 'Nunito', Arial, sans-serif;
+
+}
+
+#btnLimpiar {
+    background-color: #f0c8fa;
+    /* Rojo suave */
+}
+
+#btnImportar {
+    background-color: #f5cf97;
+    /* Naranja suave */
+}
+
+#btnExportar {
+    background-color: #b2dfdb;
+    /* Verde más claro */
+}
+
+#btnGuardar {
+    background-color: #90caf9;
+    /* Azul más claro */
+}
+
+#btnExportarTexto {
+    background-color: #fac8c8;
+}
+
+#menuButton {
+    background-color: #B5B5B5;
+}
+
+#btnGuardar:hover,
+#btnExportar:hover,
+#btnExportarTexto:hover,
+#btnLimpiar:hover,
+#btnImportar:hover,
+#btnEnviar:hover #btnEnviar2:hover {
+    background-color: var(--color-primario);
+}
+
+#pass {
+    font-family: 'Nunito', Arial, sans-serif;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px;
+    font-size: 16px;
+    height: 27px;
+    align-self: center;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    width: 100px;
+}
+
+.Contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+}
+
+.tablas {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+}
+
+
+#Informacion {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#TablaSol,
+#TablaSol2 {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#TablaSol th,
+#TablaSol2 th {
+    width: auto;
+}
+
+#Solicitante,
+#Receptor,
+#SolExportar {
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+#Solicitudes {
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+}
+
+
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+#NuevaSolicitud {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Form input[type="submit"] {
+    align-self: center;
+}
+
+.Divs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Seccion2 {
+    padding-top: 10px;
+}
+
+#btnIntercambioTurno {
+    margin-top: 10px;
+}
+
+#btnIntercambioTurno {
+    margin-bottom: 15px;
+}
+
+#btnEnviar,
+#btnEnviar2 {
+    padding: 10px;
+    width: 38px;
+}
+
+#TablaSol,
+#TablaSol2 {
+    width: 100%;
+    /* Ajusta esto según tus necesidades */
+    max-height: 400px;
+    overflow: auto;
+    /* Habilita el desplazamiento tanto en x como en y */
+}
+
+#Table2 {
+    display: block;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#Table2 thead th {
+    position: sticky;
+    top: 0;
+    border-color: #000000;
+}
+
+#Table2 th,
+#Table2 td {
+    text-align: center;
+    width: 1000px;
+    word-wrap: break-word;
+}
+
+#btnEnviar:disabled,
+#btnEnviar2:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+}
+
+.btnRechazar,
+.btnAprobar {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.btnAprobar {
+    background-color: #afed87;
+}
+
+.btnRechazar {
+    background-color: #fc818d;
+    margin-top: 7px;
+}
+
+.btnAprobar:hover {
+    background-color: #a2ff64;
+}
+
+.btnRechazar:hover {
+    background-color: #fa5c6c;
+    margin-top: 7px;
+}
+
+.Marca {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 110px;
+    animation: marquee 17s linear infinite;
+}
+
+.Marca p {
+    margin: 0;
+    margin-top: 3px;
+    height: 30px;
+}
+
+@keyframes marquee {
+    0% {
+        text-indent: 100%
+    }
+
+    100% {
+        text-indent: -100%
+    }
+}
+
+
+/* Global styles */
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #000;
+    padding: 0%;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 10px;
+    /* Adjusted padding for consistency */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    /* Reduced redundancy */
+    text-decoration: none;
+    font-weight: bold;
+    /* Moved from `.botonesNav` for consistency */
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Buttons styles */
+.botonesNav {
+    display: flex;
+    /* Retained from original code */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.botonesNav li {
+    display: inline;
+    /* Retained from original code */
+    margin-right: 0px;
+    /* Retained from original code */
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    margin-right: px;
+}
+
+.custom-select {
+    font-family: 'Nunito', Arial, sans-serif;
+    width: auto;
+}
+
+#Mes option,
+#Año option {
+    padding: 5px 10px;
+}
+
+#Mes.custom-select,
+#Año.custom-select {
+    margin-bottom: 10px;
+}
+
+/* Media queries */
+
+
+
+
+@media (max-width: 968px) {
+
+
+
+    nav {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos en el eje transversal */
+    }
+
+    .titulo {
+        font-size: 18px;
+        /* Aumenta el tamaño de la fuente para que el título sea más prominente */
+        color: #333;
+        /* Cambia el color para que contraste con el fondo */
+    }
+
+    .botonesNav {
+        display: flex;
+        flex-direction: row;
+        /* Cambia la dirección a fila para que los botones se muestren en una línea */
+        justify-content: space-around;
+        /* Distribuye el espacio alrededor de los botones de manera uniforme */
+        flex-wrap: wrap;
+        /* Permite que los elementos de la lista se envuelvan en múltiples líneas si no caben en una sola línea */
+        padding: 10px 0;
+        /* Añade padding para dar más espacio alrededor de los botones */
+        gap: 5px;
+    }
+
+    nav ul.botonesNav li a {
+        font-size: 14px;
+        /* Reduce el tamaño de la fuente para que los botones no sean demasiado grandes */
+    }
+
+    nav ul.botonesNav li a:hover {
+        background-color: #ffffff;
+        /* Cambia el color de fondo al pasar el ratón para que contraste con el texto */
+        color: rgb(0, 0, 0);
+    }
+
+    nav ul.botonesNav li a {
+        font-size: 14px;
+        overflow: hidden;
+        /* Asegura que el texto no se desborde del contenedor */
+        text-overflow: ellipsis;
+        /* Añade puntos suspensivos cuando el texto es demasiado largo */
+        white-space: nowrap;
+        /* Evita que el texto se rompa en varias líneas */
+    }
+
+    /* Estilos para cuando se hace scroll en una pantalla pequeña */
+    .small-header-scroll {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos en el eje transversal */
+        background-color: var(--color-primario);
+        /* Un color de fondo oscuro puede ayudar a que el encabezado se destaque */
+        color: #000;
+        /* Un color de texto claro puede ayudar a que el texto sea legible contra el fondo oscuro */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Una sombra de caja puede ayudar a que el encabezado se destaque contra el contenido de la página */
+    }
+
+    .small-header-scroll .titulo {
+        font-size: 16px;
+        /* Reduce el tamaño de la fuente cuando se hace scroll para que el título no sea demasiado grande */
+    }
+
+    .small-header-scroll .botonesNav {
+        flex-direction: row;
+        /* Cambia la dirección a fila para que los botones se muestren en una línea */
+        justify-content: space-around;
+        /* Distribuye el espacio alrededor de los botones de manera uniforme */
+        flex-wrap: wrap;
+        /* Permite que los elementos de la lista se envuelvan en múltiples líneas si no caben en una sola línea */
+        padding: 5px 0;
+        /* Reduce el padding cuando se hace scroll para maximizar el espacio de la pantalla */
+    }
+
+    .small-header-scroll ul.botonesNav li a {
+        font-size: 12px;
+        /* Reduce el tamaño de la fuente cuando se hace scroll para que los botones no sean demasiado grandes */
+    }
+
+    .small-header-scroll ul.botonesNav li a {
+        font-size: 12px;
+        overflow: hidden;
+        /* Asegura que el texto no se desborde del contenedor */
+        text-overflow: ellipsis;
+        /* Añade puntos suspensivos cuando el texto es demasiado largo */
+        white-space: nowrap;
+        /* Evita que el texto se rompa en varias líneas */
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    section {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    section:not(.no-margin-top) {
+        margin-top: 180px !important;
+    }
+}
+
+@media only screen and (max-width: 100x) {
+    .TablaDescansos {
+        padding: 0px;
+        padding-bottom: 17px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .vertical-bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    #Informacion {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .TablaDescansos {
+        padding: 0px;
+        padding-bottom: 0px;
+        /* Retained from original code */
+    }
+
+    #InformacionVaca {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+}
+
+#Descansos th,
+#Descansos td {
+    text-align: center;
+}
+
+#Descansos tr {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+#Descansos {
+    border-right: 1px solid #000;
+}
+
+
+
+#banner {
+    background: #ffd700;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: cambiarColor 1s ease infinite;
+}
+
+@keyframes cambiarColor {
+    0% {
+        background: #ffd700;
+    }
+
+    50% {
+        background: #ff6347;
+    }
+
+    100% {
+        background: #ffd700;
+    }
+}
+
+.aparecer {
+    animation: aparecerAnimacion 0.5s ease-in-out;
+}
+
+
+.tablas {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+#TablaCalculos,
+#TiposDias {
+    table-layout: fixed;
+    display: block;
+    text-align: center;
+    /* Añadido para centrar el texto */
+}
+
+#TiposDias {
+    width: fit-content;
+    align-self: flex-end;
+    text-align: center;
+    /* Añadido para centrar el texto */
+}
+
+#TablaCalculos th,
+#TablaCalculos td {
+    text-align: center;
+    align-items: center;
+}
+
+#TiposDias th,
+#TiposDias td {
+    text-align: center;
+}
+
+#TiposDias thead th {
+    padding: 6.5px;
+}
+
+
+
+
+#TablaCalculos th:first-child,
+#TablaCalculos td:first-child {
+    min-width: 170px;
+}
+
+#BotonesHorario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.vertical-bar {
+    height: 42px;
+    border-left: solid 2px #000000;
+}
+
+#Izq,
+#Der,
+#Hoy {
+    height: 30x;
+    width: 30px;
+    padding: 3px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#Izq:hover,
+#Der:hover,
+#Hoy:hover {
+    background-color: var(--color-primario);
+}
+
+#Table tbody tr td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--color-primario);
+    z-index: 1;
+}
+
+#Table tbody tr th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--color-primario);
+    z-index: 1;
+}
+
+
+#titulos,
+#Dias,
+#Descansos th {
+    border-bottom: 1px solid black;
+}
+
+.GModulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.Modulo {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    overflow: auto;
+}
+
+
+
+
+@media (min-width: 600px) {
+    .Modulo {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .Modulo {
+        width: 33.33%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .celda {
+        flex-direction: column;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        /* Añadido para centrar verticalmente */
+        width: 100%;
+    }
+
+    .input-container p {
+        margin-right: 10px;
+    }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Para Chrome, Safari y Edge */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Table>tbody:nth-of-type(2)>tr>td:not(:first-child),
+#Table>tbody:nth-of-type(2)>tr:last-child>td:first-child {
+    border-bottom: 1px solid #000;
+}
+
+#Contactos,
+#Matriz,
+#Enlaces,
+#EnlacesArus,
+#Administrativas {
+    margin: 10px;
+    width: auto;
+    overflow: auto;
+    display: block;
+    height: 300px;
+    position: static;
+}
+
+#Contactos th,
+#Matriz th,
+#Enlaces th,
+#EnlacesArus th,
+#Administrativas th {
+    background-color: var(--color-primario);
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-collapse: collapse;
+}
+
+#Contactos tr td,
+#Matriz tr td,
+#Enlaces tr td,
+#EnlacesArus tr td,
+#Administrativas tr td {
+    white-space: nowrap !important;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+#EnlacesArus {
+    height: 342px;
+}
+
+#FormTiendas {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 5px;
+    display: flex;
+}
+
+#busqueda,
+#busqueda2,
+#busqueda3,
+#busqueda4 {
+    flex-grow: 1;
+}
+
+.GModulos2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: min-content;
+    justify-content: start;
+    /* Alinea el conjunto de elementos a la izquierda */
+}
+
+@media (max-width: 738px) {
+    .GModulos2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.Modulo2 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    /* Añadir esta línea para permitir el posicionamiento absoluto del span */
+}
+
+.module-type {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.8em;
+    /* Tamaño de fuente más pequeño */
+    color: #000000;
+    background-color: var(--color-primario);
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+.delete-module {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.Modulo2:hover {
+    background-color: #000000;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
+.Modulo2:hover .module-type {
+    background-color: #000000;
+    color: var(--color-primario);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.close,
+#close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+#close2:hover,
+#close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.small-header {
+    font-size: 0.8em;
+    height: 50px;
+}
+
+@media screen and (min-width: 968px) {
+    nav {
+        transition: height 0.5s ease, font-size 0.5s ease;
+    }
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+#LimpiarP:hover,
+#distribucion1:hover,
+#distribucion2:hover {
+    background-color: var(--color-primario) !important;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#Panel {
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    height: min-content;
+    min-width: 300px;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.Almuerzos td,
+.Turnos td {
+    background-color: white;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #Informacion {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Calculos {
+        display: flex;
+        width: 100%;
+    }
+
+    #TiposDias {
+        width: 50%;
+        overflow-x: scroll;
+    }
+
+    #TiposDias thead th {
+        padding: 1.5px;
+    }
+
+    #TablaCalculos {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .Turnos,
+    .Almuerzos {
+        width: 60%;
+    }
+
+
+}
+
+#TablaCalculos tr:nth-child(odd) td,
+#TiposDias tr:nth-child(even) td {
+    background-color: white !important;
+}
+
+#TablaCalculos tr:nth-child(even) td,
+#TiposDias tr:nth-child(odd) td {
+    background-color: rgb(224, 224, 224) !important;
+}
+
+#Solicitudes {
+    display: none;
+}
+
+.modal-content2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    position: fixed;
+    /* Posicionamiento fijo respecto a la ventana del navegador */
+    top: 50%;
+    /* Centrado verticalmente */
+    left: 50%;
+    /* Centrado horizontalmente */
+    transform: translate(-50%, -40%);
+    width: max-content;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    overflow: auto;
+    /* Habilita el scroll si es necesario */
+}
+
+@media screen and (max-height: 327px) {
+    .titulo h2 {
+        margin: 0;
+    }
+
+    .Turnos,
+    .Almuerzos {
+        width: 30%;
+    }
+
+    .Calculos {
+        display: flex;
+        width: auto;
+    }
+
+    section {
+        margin-top: 100px !important;
+    }
+
+}
+
+#Panel {
+    width: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: var(--color-primario);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+#BotonesHerramientas {
+    display: none;
+}
+
+#BotonesHerramientas.mostrar {
+    display: flex;
+}
+
+#NoResultados {
+    display: none;
+}
+
+#Gpdf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    justify-content: start;
+    max-height: 225px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Cuando la pantalla tiene 600px o menos, cambiamos a una sola columna */
+@media (max-width: 600px) {
+    #Gpdf {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+#Formulario {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+#LogoLogin {
+    height: 251px;
+    padding-right: 20%;
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    #LogoLogin {
+        padding-right: 0;
+        height: 50%;
+        padding-bottom: 10px;
+    }
+}
+
+#M3 {
+    display: flex;
+}
+
+.contenedor-modulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor-modulos .Modulo2 {
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+@media (max-width: 800px) {
+    .contenedor-modulos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contenedor-modulos .Modulo2 {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+}
+
+.index-page header nav .titulo {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    width: 100%;
+}
+
+.index-page section {
+    margin: 0px;
+}
+
+#usuario :hover {
+    cursor: pointer;
+}
+
+#musicPlayer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    /* Gradiente de fondo */
+    color: #fff;
+    padding: 10px 20px;
+    /* Ajuste del padding para más espacio */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra más pronunciada */
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    /* Esquinas redondeadas */
+    border-top-right-radius: 10px;
+    /* Esquinas redondeadas */
+}
+
+#audioPlayer {
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    /* Esquinas redondeadas */
+    outline: none;
+    /* Remover el borde al enfocar */
+    transition: transform 0.3s ease;
+    /* Transición suave al interactuar */
+}
+
+#audioPlayer:hover {
+    transition: background-color 0.3s ease;
+    /* Transición suave del fondo */
+}
+
+#songSelector {
+    width: 20%;
+    height: 30px;
+    margin-left: 10px;
+    background-color: #182848;
+    /* Color de fondo más oscuro para contraste */
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 15px;
+    /* Esquinas redondeadas */
+    outline: none;
+    /* Remover el borde al enfocar */
+    transition: background-color 0.3s ease;
+    /* Transición suave del fondo */
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+#songSelector:hover {
+    background-color: #4b6cb7;
+    /* Cambio de color al pasar el mouse */
+}
+
+#btnMostrarReproductor {
+    position: fixed;
+    /* Cambia la posición a fijo */
+    bottom: 50px;
+    /* Distancia desde el fondo */
+    right: 20px;
+    /* Distancia desde la derecha */
+    display: flex;
+    align-items: center;
+    /* Alinea los elementos internos verticalmente */
+    justify-content: center;
+    /* Alinea los elementos internos horizontalmente */
+    border: 0;
+}
+
+.Calculos {
+    display: none;
+}
+
+.Configuraciones {
+    width: 100%;
+}
+
+.Configuracion {
+    width: 100%;
+}
+
+#Estadisticas {
+    width: 100%;
+}
+
+#EstadisticasContenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#Table1 {
+    width: 100%;
+    /* Ajustar el ancho total de la tabla */
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* Asegura que todas las columnas tengan el mismo ancho */
+}
+
+#Table1 th,
+#Table1 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#Table1 th#NombreAsesor {
+    width: 200px;
+    /* Ajusta el ancho según sea necesario */
+}
+
+#Table1 th.common-width,
+#Table1 td.common-width {
+    width: 100px;
+}
+
+
+#Table1 th#NombreAsesor {
+    width: 200px;
+}
+
+#Table1 th:not(#NombreAsesor),
+#Table1 td {
+    width: 50px;
+    text-align: center;
+}
+
+.module-creator {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 0.8em;
+    color: #777;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+#Encabezado {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-primario) !important;
+    border-bottom: 1px solid #ddd;
+}
+
+#TablaPagosQuincena1 th,
+#TablaPagosQuincena2 th {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+#TablaPagosQuincena1,
+#TablaPagosQuincena2 {
+    width: min-content;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+#TablaPagosQuincena1 th:first-child,
+#TablaPagosQuincena2 th:first-child,
+#TablaPagosQuincena1 td:first-child,
+#TablaPagosQuincena2 td:first-child {
+    width: 200px;
+}
+
+#TablasSalarios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #TablasSalarios {
+        align-items: flex-start;
+    }
+}
+
+.Items {
+    text-align: start;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+
+
+.Items h4,
+.AgregarItems {
+    background: var(--color-primario);
+    border-radius: 5px;
+    margin: 2.5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.1s ease;
+    transition: background-color 0.3s ease;
+}
+
+.Items h4:hover {
+    background-color: var(--color-secundario);
+}
+
+
+.Items h4.selected {
+    background-color: #000000;
+    color: #ffa600;
+}
+
+#enlaces-container {
+
+    display: flex;
+}
+
+.enlace-item {
+    margin: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#descripcion {
+    height: 445px;
+    /* Ajusta el tamaño fijo que desees */
+    display: flex;
+    flex-direction: column;
+}
+
+#descripcion-texto {
+    flex: 1;
+    /* Permite que ocupe el espacio restante dentro del padre */
+    overflow-y: auto;
+    /* Habilita el scroll vertical si el contenido excede el tamaño */
+    box-sizing: border-box;
+    max-height: 100%;
+    /* Asegura que el contenido no exceda el tamaño del contenedor */
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 930px) {
+    .ProcedimientosDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #items-container {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #descripcion {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    #Cabecera {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #editar-btn,
+    #guardar-btn,
+    #agregar-enlace-btn {
+        position: static !important;
+        margin-bottom: 19px;
+    }
+
+    #ItemsTamaño {
+        width: 100% !important;
+    }
+
+    #items-container {
+        width: auto !important;
+    }
+}
+
+.ql-editor {
+    font-family: 'Nunito', sans-serif;
+}
+
+.ql-snow {
+    .ql-picker {
+        &.ql-size {
+
+            .ql-picker-label,
+            .ql-picker-item {
+                &::before {
+                    content: attr(data-value) !important;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos para el botón de agregar */
+.agregar-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 40px;
+    /* Ajusta la altura según sea necesario */
+    font-size: 24px;
+    /* Tamaño del + */
+    color: white;
+    background-color: #007bff;
+    /* Color de fondo, puedes cambiarlo */
+    border: none;
+    border-radius: 5px;
+    /* Borde redondeado */
+    cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.agregar-btn:hover {
+    background-color: #0056b3;
+    /* Color de fondo cuando se pasa el ratón sobre el botón */
+}
+
+.agregar-btn:focus {
+    outline: none;
+    /* Elimina el contorno del botón cuando está enfocado */
+}
+
+.item-btn {
+    font-family: 'Nunito', sans-serif;
+    /* Asegúrate de que el botón use la misma fuente */
+    font-weight: 600;
+    /* Asegúrate de que el texto del botón sea visible */
+}
+
+
+.eliminar-enlace-btn {
+    background-color: black;
+    color: var(--color-primario);
+    border: none;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.eliminar-enlace-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.enlace-texto {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* Espaciado entre los elementos */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+}
+
+#contenedor label {
+    width: auto;
+    white-space: nowrap;
+    /* Mantiene el texto en una sola línea */
+}
+
+#contenedor input {
+    width: 80px;
+    padding: 5px;
+}
+
+#contenedor select {
+    width: auto;
+    padding: 5px;
+}
+
+
+/* Estilo del modal */
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+#listaEmpleados div {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#listaEmpleados label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    text-wrap: nowrap;
+}
+
+#listaEmpleados {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
